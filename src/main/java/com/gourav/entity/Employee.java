@@ -1,4 +1,4 @@
-package com.gourav.controller;
+package com.gourav.entity;
 
 public class Employee {
 	
