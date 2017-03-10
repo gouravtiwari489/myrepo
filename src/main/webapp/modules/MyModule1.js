@@ -14,12 +14,4 @@ myApp.controller("myController3", function($scope, $http) {
 		$scope.employee =  employee;
 		console.log('employee'+employee);
 	});
-	
-	
-	/*var employee = {
-		name:"gourav",
-		age: "23",
-		gender:"m"
-	}
-	$scope.employee = employee;	*/
 });

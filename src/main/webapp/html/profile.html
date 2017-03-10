@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Profile</title>
+</head>
+<body>
+	<form name="card" ng-submit="myFunc()">
+
+		<table>
+			<tr>
+				<td>cardNumber</td>
+				<td><input type="text" ng-model="CardDetail.cardNumber" required></td>
+			</tr>
+			
+			<tr>
+				<td>name</td>
+				<td><input type="text" ng-model="CardDetail.name" required></td>
+			</tr>
+			<tr>
+				<td>cardType</td>
+				<td><input type="text" ng-model="CardDetail.cardType" required></td>
+			</tr>
+			
+			<tr>
+				<td>cvv</td>
+				<td><input type="text" ng-model="CardDetail.cvv" required></td>
+			</tr>
+			
+			<tr>
+				<td>Post</td>
+				<td><input type="submit" value="Submit" ng-disabled = "card.$invalid"/></td>
+			</tr>
+
+		</table>
+
+	</form>
+</body>
+</html>
