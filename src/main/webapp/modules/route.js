@@ -30,7 +30,7 @@ myRouteApp.controller("registerCtrl", function($scope, $http) {
 });
 
 
-myRouteApp.controller("profileCtrl", function($scope, CardService) {
+/*myRouteApp.controller("profileCtrl", function($scope, CardService) {
 	$scope.myFunc = function(){
 		alert("called");
 		CardService.AddCardToDB($scope.CardDetail)
@@ -47,4 +47,20 @@ myRouteApp.controller("profileCtrl", function($scope, CardService) {
 	}
 	
 	return fac;
-}])
+}])*/
+
+
+
+myRouteApp.controller("profileCtrl", function($scope, $http) {
+	$scope.myFunc = function(){
+		alert("called");
+		var CardDetail =  $scope.CardDetail
+		
+		$http.post("resources/spring/saveCard", CardDetail).success(function(response){
+			alert("posted");
+		})
+	}
+})
+
+
+
