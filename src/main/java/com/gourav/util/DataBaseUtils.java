@@ -16,7 +16,7 @@ public class DataBaseUtils {
 	static final String PASSWORD = "system";
 	
 	public static void save(Profile profile){
-
+		
 		Connection conn = null;
 
 		try {
